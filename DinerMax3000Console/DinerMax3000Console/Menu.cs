@@ -20,7 +20,9 @@ namespace DinerMax3000Console
             item.Title = Title;
             item.Description = Description;
             item.Price = Price;
-            item.Add(item);
+            items.Add(item);
+
+
         }
 
         public string Name;
