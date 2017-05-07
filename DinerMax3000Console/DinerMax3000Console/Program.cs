@@ -3,8 +3,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using DinerMax3000BusinessLayer;
-
 
 namespace DinerMax3000Console
 {
@@ -13,43 +11,46 @@ namespace DinerMax3000Console
         static void Main(string[] args)
         {
             FoodMenu summerMenu = new FoodMenu();
-            summerMenu.Name = "Summer Menu";
-            summerMenu.AddMenuItem("Salmon", "Fresh Norwegian Salmon Sandefjord butter.", 25.50);
-            summerMenu.AddMenuItem("Taco", "All Norwegians eat taco on Friday", 10);
-            summerMenu.HospitalDirections = "Right around the corner of 5th street. Ask Dr.Jones";
+            summerMenu.Name = "Summer menu";
+            summerMenu.AddMenuItem("Salmon", "Fresh Norwegian Salmon with Sandefjord butter.", 25.50);
+            summerMenu.AddMenuItem("Taco", "All Norwegians eat taco on Fridays.", 10);
+            summerMenu.HospitalDirections = "Right around the corner of 5th street. Ask for Dr. Jones.";
 
             DrinkMenu outsideDrinks = new DrinkMenu();
             outsideDrinks.Disclaimer = "Do not drink and code.";
-            outsideDrinks.AddMenuItem("Virgin Cuba Lible", "A classic", 10);
-            outsideDrinks.AddMenuItem("ScrewDriver", "Makes you hammered", 15);
-            outsideDrinks.AddMenuItem("White Russian", "Really srong, not for Begginers", 18);
-            outsideDrinks.AddMenuItem("A breath of spring", "Fresh Drink with bitter", 15);
+            outsideDrinks.AddMenuItem("Virgin Cuba Libre", "A classic.", 10);
+            outsideDrinks.AddMenuItem("Screwdriver", "Makes you hammered.", 15);
 
             Order hungryGuestOrder = new Order();
 
-            for (int x=0;x<=summerMenu.items.Count-1;x++)
+            for (int x = 0; x <= summerMenu.items.Count - 1; x++)
             {
                 MenuItem currentItem = summerMenu.items[x];
                 hungryGuestOrder.items.Add(currentItem);
+
             }
 
-            foreach(MenuItem currentitem in outsideDrinks.items)
+            foreach (MenuItem currentItem in outsideDrinks.items)
             {
-                hungryGuestOrder.items.Add(currentitem);
+                hungryGuestOrder.items.Add(currentItem);
             }
 
-            Console.WriteLine("The Total is: " + hungryGuestOrder.Total);
+            Console.WriteLine("The total is:" + hungryGuestOrder.Total);
+
             try
             {
-                outsideDrinks.AddMenuItem("Starter", "Small apperitive for customers which are waiting for dinner", 0);
+
+                outsideDrinks.AddMenuItem("Himkok", "9 of 10 people recommend staying away from this drink", 0);
             }
-            catch (Exception throwException)
+            catch (Exception thrownException)
             {
-                Console.WriteLine(throwException.Message);
+                Console.WriteLine(thrownException.Message);
             }
 
+
             Console.ReadKey();
-            
+
+
         }
     }
 }
