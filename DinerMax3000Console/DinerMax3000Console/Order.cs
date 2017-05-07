@@ -4,8 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DinerMax3000Console
-{
+namespace DinerMax3000BusinessLayer
+{ 
     public class Order
     {
         public List<MenuItem> items = new List<MenuItem>();
