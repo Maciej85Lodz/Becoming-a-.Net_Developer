@@ -7,7 +7,7 @@
     <ProjectGuid>{D993A673-2825-424D-BF23-6980F1BEE0B6}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>DinerMax3000BusinessLayer</RootNamespace>
+    <RootNamespace>DinerMax3000.BusinessLayer</RootNamespace>
     <AssemblyName>DinerMax3000BusinessLayer</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>

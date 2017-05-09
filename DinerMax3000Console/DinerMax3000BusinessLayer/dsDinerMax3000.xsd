@@ -4,7 +4,7 @@
     <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
       <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
         <Connections>
-          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="DinerMax3000ConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="DinerMax3000ConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.DinerMax3000BusinessLayer.Properties.Settings.GlobalReference.Default.DinerMax3000ConnectionString" Provider="System.Data.SqlClient" />
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="DinerMax3000ConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="DinerMax3000ConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.DinerMax3000.BusinessLayer.Properties.Settings.GlobalReference.Default.DinerMax3000ConnectionString" Provider="System.Data.SqlClient" />
         </Connections>
         <Tables>
           <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="MenuTableAdapter" GeneratorDataComponentClassName="MenuTableAdapter" Name="Menu" UserDataComponentName="MenuTableAdapter">
@@ -213,7 +213,7 @@ SELECT Id, Name, Description, Price FROM MenuItem WHERE (Id = SCOPE_IDENTITY())<
   <xs:element name="dsDinerMax3000" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="dsDinerMax3000" msprop:Generator_UserDSName="dsDinerMax3000">
     <xs:complexType>
       <xs:choice minOccurs="0" maxOccurs="unbounded">
-        <xs:element name="Menu" msprop:Generator_TableClassName="MenuDataTable" msprop:Generator_TableVarName="tableMenu" msprop:Generator_TablePropName="Menu" msprop:Generator_RowDeletingName="MenuRowDeleting" msprop:Generator_RowChangingName="MenuRowChanging" msprop:Generator_RowEvHandlerName="MenuRowChangeEventHandler" msprop:Generator_RowDeletedName="MenuRowDeleted" msprop:Generator_UserTableName="Menu" msprop:Generator_RowChangedName="MenuRowChanged" msprop:Generator_RowEvArgName="MenuRowChangeEvent" msprop:Generator_RowClassName="MenuRow">
+        <xs:element name="Menu" msprop:Generator_TableClassName="MenuDataTable" msprop:Generator_TableVarName="tableMenu" msprop:Generator_RowChangedName="MenuRowChanged" msprop:Generator_TablePropName="Menu" msprop:Generator_RowDeletingName="MenuRowDeleting" msprop:Generator_RowChangingName="MenuRowChanging" msprop:Generator_RowEvHandlerName="MenuRowChangeEventHandler" msprop:Generator_RowDeletedName="MenuRowDeleted" msprop:Generator_RowClassName="MenuRow" msprop:Generator_UserTableName="Menu" msprop:Generator_RowEvArgName="MenuRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="Id" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnId" msprop:Generator_ColumnPropNameInRow="Id" msprop:Generator_ColumnPropNameInTable="IdColumn" msprop:Generator_UserColumnName="Id" type="xs:int" />
@@ -248,7 +248,7 @@ SELECT Id, Name, Description, Price FROM MenuItem WHERE (Id = SCOPE_IDENTITY())<
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="Menu_MenuItem" msprop:Generator_TableClassName="Menu_MenuItemDataTable" msprop:Generator_TableVarName="tableMenu_MenuItem" msprop:Generator_TablePropName="Menu_MenuItem" msprop:Generator_RowDeletingName="Menu_MenuItemRowDeleting" msprop:Generator_RowChangingName="Menu_MenuItemRowChanging" msprop:Generator_RowEvHandlerName="Menu_MenuItemRowChangeEventHandler" msprop:Generator_RowDeletedName="Menu_MenuItemRowDeleted" msprop:Generator_UserTableName="Menu_MenuItem" msprop:Generator_RowChangedName="Menu_MenuItemRowChanged" msprop:Generator_RowEvArgName="Menu_MenuItemRowChangeEvent" msprop:Generator_RowClassName="Menu_MenuItemRow">
+        <xs:element name="Menu_MenuItem" msprop:Generator_TableClassName="Menu_MenuItemDataTable" msprop:Generator_TableVarName="tableMenu_MenuItem" msprop:Generator_RowChangedName="Menu_MenuItemRowChanged" msprop:Generator_TablePropName="Menu_MenuItem" msprop:Generator_RowDeletingName="Menu_MenuItemRowDeleting" msprop:Generator_RowChangingName="Menu_MenuItemRowChanging" msprop:Generator_RowEvHandlerName="Menu_MenuItemRowChangeEventHandler" msprop:Generator_RowDeletedName="Menu_MenuItemRowDeleted" msprop:Generator_RowClassName="Menu_MenuItemRow" msprop:Generator_UserTableName="Menu_MenuItem" msprop:Generator_RowEvArgName="Menu_MenuItemRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="Id" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnId" msprop:Generator_ColumnPropNameInRow="Id" msprop:Generator_ColumnPropNameInTable="IdColumn" msprop:Generator_UserColumnName="Id" type="xs:int" />
@@ -257,7 +257,7 @@ SELECT Id, Name, Description, Price FROM MenuItem WHERE (Id = SCOPE_IDENTITY())<
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="MenuItem" msprop:Generator_TableClassName="MenuItemDataTable" msprop:Generator_TableVarName="tableMenuItem" msprop:Generator_TablePropName="MenuItem" msprop:Generator_RowDeletingName="MenuItemRowDeleting" msprop:Generator_RowChangingName="MenuItemRowChanging" msprop:Generator_RowEvHandlerName="MenuItemRowChangeEventHandler" msprop:Generator_RowDeletedName="MenuItemRowDeleted" msprop:Generator_UserTableName="MenuItem" msprop:Generator_RowChangedName="MenuItemRowChanged" msprop:Generator_RowEvArgName="MenuItemRowChangeEvent" msprop:Generator_RowClassName="MenuItemRow">
+        <xs:element name="MenuItem" msprop:Generator_TableClassName="MenuItemDataTable" msprop:Generator_TableVarName="tableMenuItem" msprop:Generator_RowChangedName="MenuItemRowChanged" msprop:Generator_TablePropName="MenuItem" msprop:Generator_RowDeletingName="MenuItemRowDeleting" msprop:Generator_RowChangingName="MenuItemRowChanging" msprop:Generator_RowEvHandlerName="MenuItemRowChangeEventHandler" msprop:Generator_RowDeletedName="MenuItemRowDeleted" msprop:Generator_RowClassName="MenuItemRow" msprop:Generator_UserTableName="MenuItem" msprop:Generator_RowEvArgName="MenuItemRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="Id" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnId" msprop:Generator_ColumnPropNameInRow="Id" msprop:Generator_ColumnPropNameInTable="IdColumn" msprop:Generator_UserColumnName="Id" type="xs:int" />
@@ -296,8 +296,8 @@ SELECT Id, Name, Description, Price FROM MenuItem WHERE (Id = SCOPE_IDENTITY())<
   </xs:element>
   <xs:annotation>
     <xs:appinfo>
-      <msdata:Relationship name="FK_Menu_MenuItem_Menu" msdata:parent="Menu" msdata:child="Menu_MenuItem" msdata:parentkey="Id" msdata:childkey="MenuId" msprop:Generator_UserChildTable="Menu_MenuItem" msprop:Generator_ChildPropName="GetMenu_MenuItemRows" msprop:Generator_UserRelationName="FK_Menu_MenuItem_Menu" msprop:Generator_ParentPropName="MenuRow" msprop:Generator_RelationVarName="relationFK_Menu_MenuItem_Menu" msprop:Generator_UserParentTable="Menu" />
-      <msdata:Relationship name="FK_Menu_MenuItem_MenuItem" msdata:parent="MenuItem" msdata:child="Menu_MenuItem" msdata:parentkey="Id" msdata:childkey="MenuItemId" msprop:Generator_UserChildTable="Menu_MenuItem" msprop:Generator_ChildPropName="GetMenu_MenuItemRows" msprop:Generator_UserRelationName="FK_Menu_MenuItem_MenuItem" msprop:Generator_RelationVarName="relationFK_Menu_MenuItem_MenuItem" msprop:Generator_UserParentTable="MenuItem" msprop:Generator_ParentPropName="MenuItemRow" />
+      <msdata:Relationship name="FK_Menu_MenuItem_Menu" msdata:parent="Menu" msdata:child="Menu_MenuItem" msdata:parentkey="Id" msdata:childkey="MenuId" msprop:Generator_UserChildTable="Menu_MenuItem" msprop:Generator_ChildPropName="GetMenu_MenuItemRows" msprop:Generator_UserRelationName="FK_Menu_MenuItem_Menu" msprop:Generator_RelationVarName="relationFK_Menu_MenuItem_Menu" msprop:Generator_UserParentTable="Menu" msprop:Generator_ParentPropName="MenuRow" />
+      <msdata:Relationship name="FK_Menu_MenuItem_MenuItem" msdata:parent="MenuItem" msdata:child="Menu_MenuItem" msdata:parentkey="Id" msdata:childkey="MenuItemId" msprop:Generator_UserChildTable="Menu_MenuItem" msprop:Generator_ChildPropName="GetMenu_MenuItemRows" msprop:Generator_UserRelationName="FK_Menu_MenuItem_MenuItem" msprop:Generator_ParentPropName="MenuItemRow" msprop:Generator_RelationVarName="relationFK_Menu_MenuItem_MenuItem" msprop:Generator_UserParentTable="MenuItem" />
     </xs:appinfo>
   </xs:annotation>
 </xs:schema>

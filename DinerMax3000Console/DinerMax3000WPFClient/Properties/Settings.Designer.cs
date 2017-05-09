@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace DinerMax3000.BusinessLayer.Properties {
+namespace DinerMax3000.WPFClient.Properties {
     
     
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
@@ -20,17 +20,6 @@ namespace DinerMax3000.BusinessLayer.Properties {
         public static Settings Default {
             get {
                 return defaultInstance;
-            }
-        }
-        
-        [global::System.Configuration.ApplicationScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=LAPTOP-JLEK9VEU;Initial Catalog=DinerMax3000;Integrated Security=True" +
-            "")]
-        public string DinerMax3000ConnectionString {
-            get {
-                return ((string)(this["DinerMax3000ConnectionString"]));
             }
         }
     }

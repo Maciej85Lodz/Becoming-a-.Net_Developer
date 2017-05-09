@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using DinerMax3000BusinessLayer;
+using DinerMax3000.BusinessLayer;
 
 namespace DinerMax3000Console
 {

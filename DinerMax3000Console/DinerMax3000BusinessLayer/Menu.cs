@@ -3,8 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using DinerMax3000BusinessLayer.dsDinerMax3000TableAdapters;
-namespace DinerMax3000BusinessLayer
+using DinerMax3000.BusinessLayer.dsDinerMax3000TableAdapters;
+namespace DinerMax3000.BusinessLayer
 {
     public class Menu
     {
@@ -54,7 +54,7 @@ namespace DinerMax3000BusinessLayer
             items.Add(item);
         }
 
-        public string Name;
+        public string Name { get; set; }
         public List<MenuItem> items;
     }
 }

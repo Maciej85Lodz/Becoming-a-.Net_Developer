@@ -10,7 +10,7 @@
 
 #pragma warning disable 1591
 
-namespace DinerMax3000BusinessLayer {
+namespace DinerMax3000.BusinessLayer {
     
     
     /// <summary>
@@ -1613,7 +1613,7 @@ namespace DinerMax3000BusinessLayer {
         }
     }
 }
-namespace DinerMax3000BusinessLayer.dsDinerMax3000TableAdapters {
+namespace DinerMax3000.BusinessLayer.dsDinerMax3000TableAdapters {
     
     
     /// <summary>
@@ -1785,7 +1785,7 @@ SELECT Id, Name, MenuType, Declaimer, HospitalDirections FROM Menu WHERE (Id = @
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::DinerMax3000BusinessLayer.Properties.Settings.Default.DinerMax3000ConnectionString;
+            this._connection.ConnectionString = global::DinerMax3000.BusinessLayer.Properties.Settings.Default.DinerMax3000ConnectionString;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -2182,7 +2182,7 @@ SELECT Id, Name, MenuType, Declaimer, HospitalDirections FROM Menu WHERE (Id = @
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::DinerMax3000BusinessLayer.Properties.Settings.Default.DinerMax3000ConnectionString;
+            this._connection.ConnectionString = global::DinerMax3000.BusinessLayer.Properties.Settings.Default.DinerMax3000ConnectionString;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -2494,7 +2494,7 @@ SELECT Id, Name, MenuType, Declaimer, HospitalDirections FROM Menu WHERE (Id = @
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::DinerMax3000BusinessLayer.Properties.Settings.Default.DinerMax3000ConnectionString;
+            this._connection.ConnectionString = global::DinerMax3000.BusinessLayer.Properties.Settings.Default.DinerMax3000ConnectionString;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
