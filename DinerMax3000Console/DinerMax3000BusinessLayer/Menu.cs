@@ -55,6 +55,6 @@ namespace DinerMax3000.BusinessLayer
         }
 
         public string Name { get; set; }
-        public List<MenuItem> items;
+        public List<MenuItem> items { get; set; }
     }
 }

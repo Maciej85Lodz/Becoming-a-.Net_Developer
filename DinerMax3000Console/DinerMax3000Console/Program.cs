@@ -13,12 +13,13 @@ namespace DinerMax3000Console
         {
             List<Menu> menusFromDatabase = Menu.GetAllMenus();
             Menu firstMenu = menusFromDatabase[0];
-            firstMenu.SaveNewMenuItem("Smorgas", "A classic nordic dish", 10);
+            firstMenu.SaveNewMenuItem("Smorgas", "A classic nordic dish.", 10);
             menusFromDatabase = Menu.GetAllMenus();
+
             Order hungryGuestOrder = new Order();
 
-            foreach(Menu currentMenu in menusFromDatabase)
-            { 
+            foreach (Menu currentMenu in menusFromDatabase)
+            {
                 foreach (MenuItem currentItem in currentMenu.items)
                 {
                     hungryGuestOrder.items.Add(currentItem);
@@ -27,7 +28,8 @@ namespace DinerMax3000Console
 
             Console.WriteLine("The total is:" + hungryGuestOrder.Total);
 
-            
+
+
 
             Console.ReadKey();
 
