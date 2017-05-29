@@ -4,6 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using DinerMax3000.BusinessLayer.dsDinerMax3000TableAdapters;
+
+
 namespace DinerMax3000.BusinessLayer
 {
     public class Menu
@@ -18,7 +20,7 @@ namespace DinerMax3000.BusinessLayer
         public void SaveNewMenuItem(string Name, string Description, double Price)
         {
             MenuItemTableAdapter taMenuItem =new MenuItemTableAdapter();
-            taMenuItem.InsertNewMenuItem(Name, Description, Price, _databaseId);
+            taMenuItem.InsertNewMenuItem(Name, Description, Price);
 
         }
         public static List<Menu> GetAllMenus()

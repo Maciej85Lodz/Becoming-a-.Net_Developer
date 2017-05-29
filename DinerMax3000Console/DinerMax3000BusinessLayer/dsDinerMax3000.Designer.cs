@@ -2444,7 +2444,9 @@ SELECT Id, Name, MenuType, Declaimer, HospitalDirections FROM Menu WHERE (Id = @
                 this._clearBeforeFill = value;
             }
         }
-        
+
+        public int MenuId { get; private set; }
+
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private void InitAdapter() {
@@ -2708,7 +2710,8 @@ SELECT Id, Name, Description, Price FROM MenuItem WHERE (Id = SCOPE_IDENTITY())"
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Insert, false)]
-        public virtual int InsertNewMenuItem(string Name, string Description, double Price, int MenuId) {
+        public virtual int InsertNewMenuItem(string Name, string Description, double Price)
+        {
             global::System.Data.SqlClient.SqlCommand command = this.CommandCollection[2];
             if ((Name == null)) {
                 throw new global::System.ArgumentNullException("Name");

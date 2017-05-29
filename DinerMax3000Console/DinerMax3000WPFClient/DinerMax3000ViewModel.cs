@@ -42,4 +42,3 @@ namespace DinerMax3000.WPFClient
         }
     }
 }
-

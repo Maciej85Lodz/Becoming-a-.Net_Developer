@@ -1,8 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using DinerMax3000.BusinessLayer;
 
 namespace DinerMax3000Console
@@ -13,7 +10,7 @@ namespace DinerMax3000Console
         {
             List<Menu> menusFromDatabase = Menu.GetAllMenus();
             Menu firstMenu = menusFromDatabase[0];
-            firstMenu.SaveNewMenuItem("Smorgas", "A classic nordic dish.", 10);
+            //firstMenu.SaveNewMenuItem("Smorgas", "A classic nordic dish.", 10);
             menusFromDatabase = Menu.GetAllMenus();
 
             Order hungryGuestOrder = new Order();

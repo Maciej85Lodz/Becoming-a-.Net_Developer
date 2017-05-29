@@ -9,8 +9,9 @@
     <Grid>
         <StackPanel>
             <ComboBox Name="cboAllMenus" SelectedItem="{Binding SelectedMenu}" ItemsSource="{Binding AllMenus}" DisplayMemberPath="Name"/>
-            <DataGrid CanUserAddRows="True" ItemsSource="{Binding SelectedMenu.items}" RowEditEnding="DataGrid_RowEditEnding"/>
+            <DataGrid CanUserAddRows="True" ItemsSource="{Binding SelectedMenu.items}" RowEditEnding="DataGrid_RowEditEnding" />
             <Button Click="Button_Click">Save all new menu items</Button>
         </StackPanel>
+
     </Grid>
 </Window>
