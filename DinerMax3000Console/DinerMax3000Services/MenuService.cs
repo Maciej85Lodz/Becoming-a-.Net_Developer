@@ -16,7 +16,5 @@ namespace DinerMax3000Services
             menus.Menus = DinerMax3000.BusinessLayer.Menu.GetAllMenus().ToArray();
             return menus;
         }
-
-
     }
 }
