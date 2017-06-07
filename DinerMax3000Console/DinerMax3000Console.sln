@@ -32,6 +32,8 @@ Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "DinerMax3000Web", "c:\Users
 		DefaultWebSiteLanguage = "Visual C#"
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DinerMax3000Services", "DinerMax3000Services\DinerMax3000Services.csproj", "{F4FBA9FF-8147-4B4F-8481-602959A1A9E1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -54,6 +56,10 @@ Global
 		{E8D7501A-76FA-47E7-81BC-BE071709A458}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E8D7501A-76FA-47E7-81BC-BE071709A458}.Release|Any CPU.ActiveCfg = Debug|Any CPU
 		{E8D7501A-76FA-47E7-81BC-BE071709A458}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{F4FBA9FF-8147-4B4F-8481-602959A1A9E1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F4FBA9FF-8147-4B4F-8481-602959A1A9E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F4FBA9FF-8147-4B4F-8481-602959A1A9E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F4FBA9FF-8147-4B4F-8481-602959A1A9E1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
